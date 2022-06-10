@@ -96,9 +96,9 @@ function Projects() {
                     <p>
                         Reconstruction of the iconic Winamp audio player.
                         <br /> This audio player connects to the Soundcloud API
-                        and uses it to stream audio. view the track's details,
-                        create a custom playlist, and share what they are
-                        listening to on social media.
+                        and uses it to stream audio. view track details, create
+                        a custom playlist, and share what they are listening to
+                        on social media.
                         <br /> This full-stack app has a registration/login
                         feature with password encryption, and uses React with
                         Redux, Node.js/Express and Postgres SQL for handling the
