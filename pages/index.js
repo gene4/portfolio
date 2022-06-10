@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import styles from "../styles/Home.module.scss";
