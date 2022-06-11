@@ -70,10 +70,7 @@ export default function Home() {
                         objectFit: "cover",
                     }}
                 >
-                    <source
-                        src="/landing-bg.m4v"
-                        type="video/mp4; codecs=hvc1"
-                    />
+                    <source src="/landing-bg.mp4" type="video/mp4" />
                 </video>
                 <div
                     style={{
