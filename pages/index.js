@@ -58,7 +58,7 @@ export default function Home() {
                     </div>
                 </motion.div>
 
-                <video
+                {/* <video
                     autoPlay
                     muted
                     loop
@@ -71,7 +71,7 @@ export default function Home() {
                     }}
                 >
                     <source src="/landing-bg.mp4" type="video/mp4" />
-                </video>
+                </video> */}
                 <div
                     style={{
                         zIndex: 1,
