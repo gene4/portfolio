@@ -74,10 +74,6 @@ export default function Home() {
                         src="/landing-bg.m4v"
                         type="video/mp4; codecs=hvc1"
                     />
-                    <source
-                        src="/landing-bg.webm"
-                        type="video/webm; codecs=vp9"
-                    />
                 </video>
                 <div
                     style={{
@@ -116,7 +112,7 @@ export default function Home() {
                         target="_blank"
                         download
                         className="button is-medium my-5 is-dark is-rounded"
-                        href="/Nadav_Kirsh_CV.pdf"
+                        href="/Nadav-Kirsh-CV.pdf"
                     >
                         Download CV
                     </a>
