@@ -12,7 +12,7 @@ import styles from "../styles/Projects.module.scss";
 
 function Projects() {
     return (
-        <Carousel showStatus={false} showThumbs={false}>
+        <Carousel showStatus={false} showThumbs={false} swipeable={false}>
             <section className={styles.project} id="projects">
                 <span className={styles.text}>
                     <h2 className="my-5">Lou&You</h2>
@@ -73,6 +73,7 @@ function Projects() {
                     }}
                 >
                     <Image
+                        priority
                         quality={100}
                         alt="Lou&You"
                         src={louandyou}
@@ -211,6 +212,7 @@ function Projects() {
                     }}
                 >
                     <Image
+                        priority
                         alt="covid19"
                         src={covid19}
                         layout="fill"
@@ -267,6 +269,7 @@ function Projects() {
                     }}
                 >
                     <Image
+                        priority
                         alt="Navot Miller"
                         src={navot}
                         layout="fill"
@@ -329,6 +332,7 @@ function Projects() {
                     }}
                 >
                     <Image
+                        priority
                         alt="Nami"
                         src={nami}
                         layout="fill"
