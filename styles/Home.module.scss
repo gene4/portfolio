@@ -8,6 +8,24 @@
     color: #eaeaea;
     height: 100vh;
     width: 100vw;
+    background-size: 250% 250%;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        hsl(215, 44%, 25%) 0%,
+        hsl(120, 21%, 44%) 15%,
+        rgb(149, 88, 120) 30%,
+        hsl(215, 44%, 25%) 45%
+    );
+    animation: diagonal alternate 30s infinite;
+}
+
+@keyframes diagonal {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .pic {
