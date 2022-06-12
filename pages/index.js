@@ -49,6 +49,7 @@ export default function Home() {
                     }}
                 >
                     <div
+                        className={styles.text_container}
                         style={{
                             transform: `translateY(${scrollY * 0.025}vh)`,
                         }}
@@ -57,21 +58,6 @@ export default function Home() {
                         <p>Frontend Developer</p>
                     </div>
                 </motion.div>
-
-                {/* <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    style={{
-                        height: "100vh",
-                        width: "100vw",
-                        position: "absolute",
-                        objectFit: "cover",
-                    }}
-                >
-                    <source src="/landing-bg.mp4" type="video/mp4" />
-                </video> */}
                 <div
                     style={{
                         zIndex: 1,
