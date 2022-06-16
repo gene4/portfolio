@@ -99,13 +99,12 @@ function Projects() {
                         <br /> This audio player connects to the Soundcloud API
                         and uses it to stream audio. view track details, create
                         a custom playlist, and share what they are listening to
-                        on social media.
-                        <br /> This full-stack app has a registration/login
-                        feature with password encryption, and uses React with
-                        Redux, Node.js/Express and Postgres SQL for handling the
-                        database.
-                        <br /> This project was selected by the Spiced Academy
-                        staff to be showcased on their website and social media.
+                        on social media. This full-stack app has a
+                        registration/login feature with password encryption, and
+                        uses React with Redux, Node.js/Express and Postgres SQL
+                        for handling the database. This project was selected by
+                        the Spiced Academy staff to be showcased on their
+                        website and social media.
                     </p>
                     <a
                         rel="noreferrer"
@@ -246,7 +245,8 @@ function Projects() {
                     <h2 className="my-5">Navot Miller</h2>
                     <p>
                         A react-based simple protfolio for artist and bestie
-                        Navot Miller (he insisted on a carusel ¯\_(ツ)_/¯).
+                        Navot Miller, with an image carousele and responsive
+                        navigation.
                     </p>
                     <a
                         rel="noreferrer"

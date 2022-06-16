@@ -90,11 +90,11 @@ export default function Home() {
                     in projects that could help people through code. <br />
                     Curious where my coding journy will take me next!
                 </motion.p>
-                <div>
+                <div className="my-4">
                     <a
                         target="_blank"
                         download
-                        className="button is-medium my-5 is-dark is-rounded"
+                        className="button  my-5 is-dark is-rounded"
                         href="/Nadav-Kirsh-CV.pdf"
                     >
                         Download CV
@@ -102,7 +102,7 @@ export default function Home() {
                     <a
                         rel="noreferrer"
                         target={"_blank"}
-                        className="button m-5 is-medium is-dark is-rounded"
+                        className="button m-5  is-dark is-rounded"
                         href="https://github.com/gene4"
                     >
                         Github
@@ -110,7 +110,7 @@ export default function Home() {
                     <a
                         rel="noreferrer"
                         target={"_blank"}
-                        className="button is-medium my-5 is-dark is-rounded"
+                        className="button  my-5 is-dark is-rounded"
                         href="https://www.linkedin.com/in/nadavkirsh/"
                     >
                         Linkedin
