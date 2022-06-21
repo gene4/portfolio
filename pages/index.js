@@ -9,7 +9,6 @@ import Projects from "../components/Projects";
 export default function Home() {
     const [scrollY, setScrollY] = useState();
     const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 3]);
 
     useEffect(() => {
         const handleScroll = () => {
