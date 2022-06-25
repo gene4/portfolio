@@ -84,10 +84,11 @@ export default function Home() {
                         stiffness: 15,
                     }}
                 >
-                    Hey there! i'm Nadav {"  "} ٩(◕‿◕｡)۶ <br />
-                    I'm a Berlin-based Frontend developer for Lou&You, intrested
-                    in projects that could help people through code. <br />
-                    Curious where my coding journy will take me next!
+                    Hey there! I'm Nadav {"  "} ٩(◕‿◕｡)۶ <br />
+                    I'm a Berlin-based Frontend developer for Lou&You,
+                    interested in projects that could help people through code.
+                    <br />
+                    Curious where my coding journey will take me next!
                 </motion.p>
                 <div className="my-4">
                     <a
