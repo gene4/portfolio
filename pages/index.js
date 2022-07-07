@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import styles from "../styles/Home.module.scss";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Projects from "../components/Projects";
+import { FaGithub, FaLinkedin, FaDownload, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
     const [scrollY, setScrollY] = useState();
-    const { scrollYProgress } = useViewportScroll();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -77,8 +77,8 @@ export default function Home() {
             </section>
             <section className={styles.section_2} id="about">
                 <motion.p
-                    initial={{ opacity: 0, color: "#eaeaea" }}
-                    whileInView={{ opacity: 1, color: "white" }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     transition={{
                         type: "spring",
                         stiffness: 15,
@@ -94,26 +94,37 @@ export default function Home() {
                     <a
                         target="_blank"
                         download
-                        className="button  my-5 is-dark is-rounded"
+                        className="button mt-5 mr-5 is-dark is-rounded"
                         href="/Nadav-Kirsh-CV.pdf"
                     >
+                        <FaDownload className="mr-2" />
                         Download CV
                     </a>
                     <a
                         rel="noreferrer"
                         target={"_blank"}
-                        className="button m-5  is-dark is-rounded"
+                        className="button mt-5 mr-5 is-dark is-rounded"
                         href="https://github.com/gene4"
                     >
+                        <FaGithub className="mr-2" />
                         Github
                     </a>
                     <a
                         rel="noreferrer"
                         target={"_blank"}
-                        className="button  my-5 is-dark is-rounded"
+                        className="button mt-5 mr-5 is-dark is-rounded"
                         href="https://www.linkedin.com/in/nadavkirsh/"
                     >
+                        <FaLinkedin className="mr-2" />
                         Linkedin
+                    </a>
+
+                    <a
+                        className="button mt-5 is-dark is-rounded"
+                        href="mailto:saturdaysyouth@gmail.com"
+                    >
+                        <FaEnvelope className="mr-2" />
+                        Email
                     </a>
                 </div>
             </section>
