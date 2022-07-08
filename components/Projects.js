@@ -12,7 +12,12 @@ import styles from "../styles/Projects.module.scss";
 
 function Projects() {
     return (
-        <Carousel showStatus={false} showThumbs={false} swipeable={false}>
+        <Carousel
+            useKeyboardArrows={true}
+            showStatus={false}
+            showThumbs={false}
+            swipeable={false}
+        >
             <section className={styles.project} id="projects">
                 <span className={styles.text}>
                     <h2 className="my-5">Lou&You</h2>

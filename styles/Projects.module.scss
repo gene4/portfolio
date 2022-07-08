@@ -3,6 +3,7 @@
     width: 100vw !important;
     display: flex !important;
     font-size: 1rem;
+    text-align: left;
     align-items: center;
     background-color: black;
     color: #eaeaea;
@@ -27,16 +28,22 @@
 
 @media (max-width: 600px) {
     .project {
+        text-align: center;
         flex-direction: column;
         padding: 4rem 2.75rem;
 
         p {
-            font-size: 1rem;
+            font-size: 1rem !important;
             line-height: 27px;
+            padding: 0;
         }
 
         span {
             margin: 0 !important;
+        }
+
+        h2 {
+            margin-top: 0.5rem !important;
         }
     }
     .text {

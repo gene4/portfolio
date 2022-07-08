@@ -76,20 +76,13 @@ export default function Home() {
                 </div>
             </section>
             <section className={styles.section_2} id="about">
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                        type: "spring",
-                        stiffness: 15,
-                    }}
-                >
+                <p>
                     Hey there! I'm Nadav {"  "} ٩(◕‿◕｡)۶ <br />
                     I'm a Berlin-based Frontend developer for Lou&You,
                     interested in projects that could help people through code.
                     <br />
                     Curious where my coding journey will take me next!
-                </motion.p>
+                </p>
                 <div className="my-4">
                     <a
                         target="_blank"
