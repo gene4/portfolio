@@ -249,7 +249,7 @@ function Projects() {
                 >
                     <h2 className="my-5">Navot Miller</h2>
                     <p>
-                        A react-based simple protfolio for artist and bestie
+                        A react-based simple portfolio for artist and bestie
                         Navot Miller, with an image carousele and responsive
                         navigation.
                     </p>
@@ -297,7 +297,7 @@ function Projects() {
                 >
                     <h2 className="my-5">Nami</h2>
                     <p>
-                        A protfolio for tatoo artist Nami, with a booking form
+                        A portfolio for tatoo artist Nami, with a booking form
                         and email notification using{" "}
                         <a
                             rel="noreferrer"

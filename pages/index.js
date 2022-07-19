@@ -25,8 +25,8 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Nadav Kirsh - Protfolio</title>
-                <meta name="description" content="Nadav Kirsh - Protfolio" />
+                <title>Nadav Kirsh - Portfolio</title>
+                <meta name="description" content="Nadav Kirsh - Portfolio" />
                 <link
                     rel="icon"
                     href="https://icon-library.com/images/n-icon/n-icon-25.jpg"
