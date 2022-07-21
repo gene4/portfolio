@@ -114,7 +114,7 @@ export default function Home() {
 
                     <a
                         className="button mt-5 is-dark is-rounded"
-                        href="mailto:saturdaysyouth@gmail.com"
+                        href="mailto:nadavkirsh.dev@gmail.com"
                     >
                         <FaEnvelope className="mr-2" />
                         Email
