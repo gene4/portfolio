@@ -1,5 +1,5 @@
 {
-    "name": "nadav_portfolio",
+    "name": "portfolio",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "framer-motion": "^6.3.3",
+        "gh-pages": "^4.0.0",
         "next": "12.1.6",
         "react": "18.1.0",
         "react-dom": "18.1.0",
