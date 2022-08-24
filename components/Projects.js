@@ -97,51 +97,70 @@ function Projects() {
                 </a>
             </section>
             <section className={styles.project}>
-                <span style={{ flex: 0.9, marginLeft: "3rem" }}>
-                    <h2 className="my-5">SoundCloud Winamp Player</h2>
+                <span
+                    className={styles.text}
+                    style={{ flex: 0.9, marginLeft: "3rem" }}
+                >
+                    <h2 className="my-5">Nami</h2>
                     <p>
-                        Reconstruction of the iconic Winamp audio player.
-                        <br /> This audio player connects to the Soundcloud API
-                        and uses it to stream audio. view track details, create
-                        a custom playlist, and share what they are listening to
-                        on social media. This full-stack app has a
-                        registration/login feature with password encryption, and
-                        uses React with Redux, Node.js/Express and Postgres SQL
-                        for handling the database. This project was selected by
-                        the Spiced Academy staff to be showcased on their
-                        website and social media.
+                        A portfolio page for tatoo artist Nami.
+                        <br /> Containing a booking form with email notification
+                        using{" "}
+                        <a
+                            rel="noreferrer"
+                            target={"_blank"}
+                            className="has-text-weight-normal"
+                            href="https://sendgrid.com/"
+                        >
+                            Sendgrid
+                        </a>
+                        , and an image gallery with{" "}
+                        <a
+                            className="has-text-weight-normal"
+                            href="https://firebase.google.com/"
+                        >
+                            Firebase
+                        </a>{" "}
+                        as the backend.
                     </p>
                     <a
                         rel="noreferrer"
                         target={"_blank"}
-                        className="button my-5 is-dark is-rounded"
-                        href="http://sc-winamp.herokuapp.com/"
+                        className="button my-5 is-dark is-rounded is-hidden-mobile"
+                        href="https://nami-xi.vercel.app/"
                     >
-                        Demo
-                    </a>
-                    <a
-                        rel="noreferrer"
-                        target={"_blank"}
-                        className="button m-5 is-dark is-rounded"
-                        href="https://github.com/gene4/winamp"
-                    >
-                        Code
+                        Live version
                     </a>
                 </span>
-                <span className="is-hidden-mobile" style={{ flex: 0.7 }}>
-                    <video
-                        autoPlay
-                        muted
-                        loop
-                        style={{
-                            objectFit: "contain",
-                            borderRadius: "15px",
-                        }}
-                    >
-                        <source src="/winamp.mp4" type="video/mp4" />
-                    </video>
-                </span>
+                <motion.div
+                    className="is-relative"
+                    style={{ width: "80%", height: "80%", flex: 1 }}
+                    animate={{ y: [0, 10, 0] }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 15,
+                        duration: 2,
+                        repeat: Infinity,
+                    }}
+                >
+                    <Image
+                        priority
+                        alt="Nami"
+                        src={nami}
+                        layout="fill"
+                        objectFit="contain"
+                    />
+                </motion.div>
+                <a
+                    rel="noreferrer"
+                    target={"_blank"}
+                    className="button my-5 is-dark is-rounded is-hidden-tablet"
+                    href="https://nami-xi.vercel.app/"
+                >
+                    Live version
+                </a>
             </section>
+
             <section className={styles.project}>
                 <span style={{ flex: 0.9, marginLeft: "3rem" }}>
                     <h2 className="my-5">Covid-19 Tracker</h2>
@@ -290,68 +309,55 @@ function Projects() {
                     Live version
                 </a>
             </section>
+
             <section className={styles.project}>
-                <span
-                    className={styles.text}
-                    style={{ flex: 0.9, marginLeft: "3rem" }}
-                >
-                    <h2 className="my-5">Nami</h2>
+                <span style={{ flex: 0.9, marginLeft: "3rem" }}>
+                    <h2 className="my-5">
+                        SoundCloud Winamp Player
+                        <br /> *API key expired*
+                    </h2>
                     <p>
-                        A portfolio for tatoo artist Nami, with a booking form
-                        and email notification using{" "}
-                        <a
-                            rel="noreferrer"
-                            target={"_blank"}
-                            className="has-text-weight-normal"
-                            href="https://sendgrid.com/"
-                        >
-                            Sandgrid
-                        </a>
-                        , and an image gallery with{" "}
-                        <a
-                            className="has-text-weight-normal"
-                            href="https://firebase.google.com/"
-                        >
-                            Firebase
-                        </a>{" "}
-                        as the backend.
+                        Reconstruction of the iconic Winamp audio player.
+                        <br /> This audio player connects to the Soundcloud API
+                        and uses it to stream audio. view track details, create
+                        a custom playlist, and share what they are listening to
+                        on social media. This full-stack app has a
+                        registration/login feature with password encryption, and
+                        uses React with Redux, Node.js/Express and Postgres SQL
+                        for handling the database. This project was selected by
+                        the Spiced Academy staff to be showcased on their
+                        website and social media.
                     </p>
                     <a
                         rel="noreferrer"
                         target={"_blank"}
-                        className="button my-5 is-dark is-rounded is-hidden-mobile"
-                        href="https://nami-xi.vercel.app/"
+                        className="button my-5 is-dark is-rounded"
+                        href="http://sc-winamp.herokuapp.com/"
                     >
-                        Live version
+                        Demo
+                    </a>
+                    <a
+                        rel="noreferrer"
+                        target={"_blank"}
+                        className="button m-5 is-dark is-rounded"
+                        href="https://github.com/gene4/winamp"
+                    >
+                        Code
                     </a>
                 </span>
-                <motion.div
-                    className="is-relative"
-                    style={{ width: "80%", height: "80%", flex: 1 }}
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{
-                        type: "spring",
-                        stiffness: 15,
-                        duration: 2,
-                        repeat: Infinity,
-                    }}
-                >
-                    <Image
-                        priority
-                        alt="Nami"
-                        src={nami}
-                        layout="fill"
-                        objectFit="contain"
-                    />
-                </motion.div>
-                <a
-                    rel="noreferrer"
-                    target={"_blank"}
-                    className="button my-5 is-dark is-rounded is-hidden-tablet"
-                    href="https://nami-xi.vercel.app/"
-                >
-                    Live version
-                </a>
+                <span className="is-hidden-mobile" style={{ flex: 0.7 }}>
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        style={{
+                            objectFit: "contain",
+                            borderRadius: "15px",
+                        }}
+                    >
+                        <source src="/winamp.mp4" type="video/mp4" />
+                    </video>
+                </span>
             </section>
         </Carousel>
     );
