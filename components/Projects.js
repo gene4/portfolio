@@ -115,7 +115,7 @@ function Projects() {
                         rel="noreferrer"
                         target={"_blank"}
                         className="button my-5 is-dark is-rounded"
-                        href="https://louandyou.org/en"
+                        href="http://sc-winamp.herokuapp.com/"
                     >
                         Demo
                     </a>
@@ -123,7 +123,7 @@ function Projects() {
                         rel="noreferrer"
                         target={"_blank"}
                         className="button m-5 is-dark is-rounded"
-                        href="https://louandyou.org/en"
+                        href="https://github.com/gene4/winamp"
                     >
                         Code
                     </a>
