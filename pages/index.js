@@ -31,6 +31,10 @@ export default function Home() {
                     rel="icon"
                     href="https://icon-library.com/images/n-icon/n-icon-25.jpg"
                 />
+                <meta
+                    name="google-site-verification"
+                    content="H220waYKCMCX-Is-Xv3ILxn6eM4JaCabZHOt-X8BG4k"
+                />
             </Head>
             <nav>
                 <Link href={"/"}>home</Link>
