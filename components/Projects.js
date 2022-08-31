@@ -1,6 +1,7 @@
 import React from "react";
 import covid19 from "../public/covid19.png";
-import louandyou from "../public/louandyou.webp";
+import louandyou from "../public/louandyou.png";
+import { useEffect } from "react";
 import navot from "../public/navot.png";
 import nami from "../public/nami.png";
 import Image from "next/image";
@@ -24,10 +25,11 @@ function Projects() {
                     <p>
                         A web app for the Society for Innovation in Gender
                         Equality, that aims to help those who are affected by
-                        sexual or domestic violence, by centralizing and
-                        personalizing helpful information.
+                        sexual or domestic violence. <br />
+                        The app is centralizing and personalizing helpful
+                        information.
                         <br />
-                        The app is built with{" "}
+                        Built with{" "}
                         <a
                             rel="noreferrer"
                             target={"_blank"}
@@ -63,44 +65,30 @@ function Projects() {
                         className="button my-5 is-dark is-rounded is-hidden-mobile"
                         href="https://louandyou.org/en"
                     >
-                        Live Version
+                        louandyou.org
                     </a>
                 </span>
-                <motion.div
-                    className="is-relative"
-                    style={{ width: "100%", height: "100%", flex: 1 }}
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{
-                        type: "spring",
-                        stiffness: 15,
-                        duration: 2,
-                        repeat: Infinity,
-                    }}
-                >
-                    <Image
-                        priority
-                        quality={100}
-                        alt="Lou&You"
-                        src={louandyou}
-                        layout="fill"
-                        objectFit="contain"
-                    />
-                </motion.div>
-
                 <a
                     rel="noreferrer"
                     target={"_blank"}
-                    className="button my-5 is-dark is-rounded is-hidden-tablet"
                     href="https://louandyou.org/en"
                 >
-                    Live Version
+                    <motion.img
+                        className={styles.lou_img}
+                        animate={{ y: [0, 10, 0] }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 15,
+                            duration: 2,
+                            repeat: Infinity,
+                        }}
+                        alt="Lou&You"
+                        src={"/louandyou.png"}
+                    />
                 </a>
             </section>
             <section className={styles.project}>
-                <span
-                    className={styles.text}
-                    style={{ flex: 0.9, marginLeft: "3rem" }}
-                >
+                <span className={styles.text}>
                     <h2 className="my-5">Nami</h2>
                     <p>
                         A portfolio page for tatoo artist Nami.
@@ -129,35 +117,26 @@ function Projects() {
                         className="button my-5 is-dark is-rounded is-hidden-mobile"
                         href="https://nami-xi.vercel.app/"
                     >
-                        Live version
+                        nami-xi
                     </a>
                 </span>
-                <motion.div
-                    className="is-relative"
-                    style={{ width: "80%", height: "80%", flex: 1 }}
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{
-                        type: "spring",
-                        stiffness: 15,
-                        duration: 2,
-                        repeat: Infinity,
-                    }}
-                >
-                    <Image
-                        priority
-                        alt="Nami"
-                        src={nami}
-                        layout="fill"
-                        objectFit="contain"
-                    />
-                </motion.div>
                 <a
                     rel="noreferrer"
                     target={"_blank"}
-                    className="button my-5 is-dark is-rounded is-hidden-tablet"
                     href="https://nami-xi.vercel.app/"
                 >
-                    Live version
+                    <motion.img
+                        animate={{ y: [0, 10, 0] }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 15,
+                            duration: 2,
+                            repeat: Infinity,
+                        }}
+                        alt="Nami"
+                        className={styles.lou_img}
+                        src={"/nami.png"}
+                    />
                 </a>
             </section>
 
@@ -262,15 +241,18 @@ function Projects() {
                 </div>
             </section>
             <section className={styles.project}>
-                <span
-                    className={styles.text}
-                    style={{ flex: 0.9, marginLeft: "3rem" }}
-                >
+                <span className={styles.text}>
                     <h2 className="my-5">Navot Miller</h2>
                     <p>
                         A react-based simple portfolio for artist and bestie
-                        Navot Miller, with an image carousele and responsive
-                        navigation.
+                        Navot Miller, with an image carousele using{" "}
+                        <a
+                            className="has-text-weight-normal"
+                            href="https://firebase.google.com/"
+                        >
+                            Firebase
+                        </a>{" "}
+                        as the backend, and a responsive navigation.
                     </p>
                     <a
                         rel="noreferrer"
@@ -278,35 +260,26 @@ function Projects() {
                         className="button my-5 is-dark is-rounded is-hidden-mobile"
                         href="https://www.navotmiller.com/"
                     >
-                        Live version
+                        navotmiller.com
                     </a>
                 </span>
-                <motion.div
-                    className={styles.navot}
-                    style={{ width: "80%", height: "80%", flex: 1 }}
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{
-                        type: "spring",
-                        stiffness: 15,
-                        duration: 2,
-                        repeat: Infinity,
-                    }}
-                >
-                    <Image
-                        priority
-                        alt="Navot Miller"
-                        src={navot}
-                        layout="fill"
-                        objectFit="contain"
-                    />
-                </motion.div>
                 <a
                     rel="noreferrer"
                     target={"_blank"}
-                    className="button my-5 is-dark is-rounded is-hidden-tablet"
                     href="https://www.navotmiller.com/"
                 >
-                    Live version
+                    <motion.img
+                        className={styles.lou_img}
+                        alt="Navot Miller"
+                        src={"/navot.png"}
+                        animate={{ y: [0, 10, 0] }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 15,
+                            duration: 2,
+                            repeat: Infinity,
+                        }}
+                    />
                 </a>
             </section>
 
