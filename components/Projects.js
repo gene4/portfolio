@@ -1,9 +1,5 @@
 import React from "react";
 import covid19 from "../public/covid19.png";
-import louandyou from "../public/louandyou.png";
-import { useEffect } from "react";
-import navot from "../public/navot.png";
-import nami from "../public/nami.png";
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -91,9 +87,10 @@ function Projects() {
                 <span className={styles.text}>
                     <h2 className="my-5">Nami</h2>
                     <p>
-                        A portfolio page for tatoo artist Nami.
-                        <br /> Containing a booking form with email notification
-                        using{" "}
+                        A portfolio page for tattoo artist Nami.
+                        <br />
+                        Built with Next.js, containing a booking form with email
+                        notification using{" "}
                         <a
                             rel="noreferrer"
                             target={"_blank"}
