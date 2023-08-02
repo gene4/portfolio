@@ -13,8 +13,7 @@ function Projects() {
             useKeyboardArrows={true}
             showStatus={false}
             showThumbs={false}
-            swipeable={false}
-        >
+            swipeable={false}>
             <section className={styles.project} id="projects">
                 <span className={styles.text}>
                     <h2 className="my-5">Lou&You</h2>
@@ -30,8 +29,7 @@ function Projects() {
                             rel="noreferrer"
                             target={"_blank"}
                             className="has-text-weight-normal"
-                            href="https://nextjs.org/"
-                        >
+                            href="https://nextjs.org/">
                             Next.js
                         </a>{" "}
                         with typescript,{" "}
@@ -39,8 +37,7 @@ function Projects() {
                             rel="noreferrer"
                             target={"_blank"}
                             className="has-text-weight-normal"
-                            href="https://www.storyblok.com/"
-                        >
+                            href="https://www.storyblok.com/">
                             Storyblok
                         </a>{" "}
                         cms and{" "}
@@ -48,8 +45,7 @@ function Projects() {
                             rel="noreferrer"
                             target={"_blank"}
                             className="has-text-weight-normal"
-                            href="https://bulma.io/"
-                        >
+                            href="https://bulma.io/">
                             {" "}
                             Bulma{" "}
                         </a>
@@ -59,16 +55,14 @@ function Projects() {
                         rel="noreferrer"
                         target={"_blank"}
                         className="button my-5 is-dark is-rounded is-hidden-mobile"
-                        href="https://louandyou.org/en"
-                    >
+                        href="https://louandyou.org/en">
                         louandyou.org
                     </a>
                 </span>
                 <a
                     rel="noreferrer"
                     target={"_blank"}
-                    href="https://louandyou.org/en"
-                >
+                    href="https://louandyou.org/en">
                     <motion.img
                         className={styles.lou_img}
                         animate={{ y: [0, 10, 0] }}
@@ -90,20 +84,18 @@ function Projects() {
                         A portfolio page for tattoo artist Nami.
                         <br />
                         Built with Next.js, containing a booking form with email
-                        notification using{" "}
+                        notification and image upload using{" "}
                         <a
                             rel="noreferrer"
                             target={"_blank"}
                             className="has-text-weight-normal"
-                            href="https://sendgrid.com/"
-                        >
+                            href="https://sendgrid.com/">
                             Sendgrid
                         </a>
                         , and an image gallery with{" "}
                         <a
                             className="has-text-weight-normal"
-                            href="https://firebase.google.com/"
-                        >
+                            href="https://firebase.google.com/">
                             Firebase
                         </a>{" "}
                         as the backend.
@@ -112,16 +104,14 @@ function Projects() {
                         rel="noreferrer"
                         target={"_blank"}
                         className="button my-5 is-dark is-rounded is-hidden-mobile"
-                        href="https://nami-xi.vercel.app/"
-                    >
+                        href="https://nami-xi.vercel.app/">
                         nami-xi
                     </a>
                 </span>
                 <a
                     rel="noreferrer"
                     target={"_blank"}
-                    href="https://nami-xi.vercel.app/"
-                >
+                    href="https://nami-xi.vercel.app/">
                     <motion.img
                         animate={{ y: [0, 10, 0] }}
                         transition={{
@@ -142,15 +132,14 @@ function Projects() {
                     <h2 className="my-5">Covid-19 Tracker</h2>
                     <p>
                         A web app that tracks covid-19 cases worldwide, using
-                        data from disease.sh API. the user can view overall
-                        cases, recoveries and deaths, sorted by country.
+                        data from <br /> disease.sh API. the user can view
+                        overall cases, recoveries and deaths, sorted by country.
                         <br /> Built with{" "}
                         <a
                             rel="noreferrer"
                             target={"_blank"}
                             className="has-text-weight-normal"
-                            href="https://nextjs.org/"
-                        >
+                            href="https://nextjs.org/">
                             Next.js
                         </a>
                         ,{" "}
@@ -158,8 +147,7 @@ function Projects() {
                             rel="noreferrer"
                             target={"_blank"}
                             className="has-text-weight-normal"
-                            href="https://mui.com/"
-                        >
+                            href="https://mui.com/">
                             Material UI
                         </a>{" "}
                         ,{" "}
@@ -167,8 +155,7 @@ function Projects() {
                             rel="noreferrer"
                             target={"_blank"}
                             className="has-text-weight-normal"
-                            href="https://www.chartjs.org/"
-                        >
+                            href="https://www.chartjs.org/">
                             Chart.js
                         </a>{" "}
                         for graphs and{" "}
@@ -176,8 +163,7 @@ function Projects() {
                             rel="noreferrer"
                             target={"_blank"}
                             className="has-text-weight-normal"
-                            href="https://leafletjs.com/"
-                        >
+                            href="https://leafletjs.com/">
                             Leaflet
                         </a>{" "}
                         for the map.
@@ -186,16 +172,14 @@ function Projects() {
                         rel="noreferrer"
                         target={"_blank"}
                         className="button my-5 is-dark is-rounded is-hidden-mobile"
-                        href="https://covid19-tracker-gene4.vercel.app/"
-                    >
+                        href="https://covid19-tracker-gene4.vercel.app/">
                         Demo
                     </a>
                     <a
                         rel="noreferrer"
                         target={"_blank"}
                         className="button my-5 is-dark is-rounded mx-5 is-hidden-mobile"
-                        href="https://github.com/gene4/covid19-tracker"
-                    >
+                        href="https://github.com/gene4/covid19-tracker">
                         Code
                     </a>
                 </span>
@@ -208,8 +192,7 @@ function Projects() {
                         stiffness: 15,
                         duration: 2,
                         repeat: Infinity,
-                    }}
-                >
+                    }}>
                     <Image
                         priority
                         alt="covid19"
@@ -223,16 +206,14 @@ function Projects() {
                         rel="noreferrer"
                         target={"_blank"}
                         className="button my-5 is-dark is-rounded"
-                        href="https://covid19-tracker-gene4.vercel.app/"
-                    >
+                        href="https://covid19-tracker-gene4.vercel.app/">
                         Demo
                     </a>
                     <a
                         rel="noreferrer"
                         target={"_blank"}
                         className="button my-5 is-dark is-rounded mx-5"
-                        href="https://github.com/gene4/covid19-tracker"
-                    >
+                        href="https://github.com/gene4/covid19-tracker">
                         Code
                     </a>
                 </div>
@@ -245,8 +226,7 @@ function Projects() {
                         Navot Miller, with an image carousele using{" "}
                         <a
                             className="has-text-weight-normal"
-                            href="https://firebase.google.com/"
-                        >
+                            href="https://firebase.google.com/">
                             Firebase
                         </a>{" "}
                         as the backend, and a responsive navigation.
@@ -255,16 +235,14 @@ function Projects() {
                         rel="noreferrer"
                         target={"_blank"}
                         className="button my-5 is-dark is-rounded is-hidden-mobile"
-                        href="https://www.navotmiller.com/"
-                    >
+                        href="https://www.navotmiller.com/">
                         navotmiller.com
                     </a>
                 </span>
                 <a
                     rel="noreferrer"
                     target={"_blank"}
-                    href="https://www.navotmiller.com/"
-                >
+                    href="https://www.navotmiller.com/">
                     <motion.img
                         className={styles.lou_img}
                         alt="Navot Miller"
@@ -286,7 +264,7 @@ function Projects() {
                         SoundCloud Winamp Player
                         <br /> *API key expired*
                     </h2>
-                    <p>
+                    <p style={{ width: "90%" }}>
                         Reconstruction of the iconic Winamp audio player.
                         <br /> This audio player connects to the Soundcloud API
                         and uses it to stream audio. view track details, create
@@ -301,17 +279,8 @@ function Projects() {
                     <a
                         rel="noreferrer"
                         target={"_blank"}
-                        className="button my-5 is-dark is-rounded"
-                        href="http://sc-winamp.herokuapp.com/"
-                    >
-                        Demo
-                    </a>
-                    <a
-                        rel="noreferrer"
-                        target={"_blank"}
-                        className="button m-5 is-dark is-rounded"
-                        href="https://github.com/gene4/winamp"
-                    >
+                        className="button mt-5 is-dark is-rounded"
+                        href="https://github.com/gene4/winamp">
                         Code
                     </a>
                 </span>
@@ -323,8 +292,7 @@ function Projects() {
                         style={{
                             objectFit: "contain",
                             borderRadius: "15px",
-                        }}
-                    >
+                        }}>
                         <source src="/winamp.mp4" type="video/mp4" />
                     </video>
                 </span>

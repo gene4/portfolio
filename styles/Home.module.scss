@@ -8,15 +8,32 @@
     color: #eaeaea;
     height: 100vh;
     width: 100vw;
-    background-size: 250% 250%;
-    background-image: repeating-linear-gradient(
-        -45deg,
-        hsl(215, 44%, 25%) 0%,
-        hsl(120, 21%, 44%) 15%,
-        rgb(149, 88, 120) 30%,
-        hsl(215, 44%, 25%) 45%
+
+    background-size: 300% 300%;
+    background-image: radial-gradient(
+        rgba(246, 243, 243, 1) 0%,
+        rgba(224, 212, 251, 1) 40%,
+        rgba(238, 255, 173, 1) 60%,
+        rgba(255, 219, 231, 1) 80%
     );
-    animation: diagonal alternate 30s infinite;
+    animation: AnimateBG 20s ease infinite;
+
+    h1,
+    p {
+        color: rgb(9, 9, 9);
+    }
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @keyframes diagonal {
@@ -35,14 +52,23 @@
 
 .section_2 {
     position: relative;
-    padding: 5rem;
+    padding: 0 5rem;
     background-color: black !important;
     color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 4;
     min-height: 100vh;
 
     p {
         font-size: 3.5rem;
+    }
+}
+
+.white {
+    a {
+        color: white !important;
     }
 }
 

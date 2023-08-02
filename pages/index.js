@@ -16,11 +16,11 @@ export default function Home() {
         };
         handleScroll();
         window.addEventListener("scroll", handleScroll);
-
+        console.log(scrollY);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [scrollY]);
 
     return (
         <div className={styles.container}>
@@ -36,7 +36,7 @@ export default function Home() {
                     content="H220waYKCMCX-Is-Xv3ILxn6eM4JaCabZHOt-X8BG4k"
                 />
             </Head>
-            <nav>
+            <nav className={scrollY > 670 && styles.white}>
                 <Link href={"/"}>home</Link>
                 <Link href={"#about"}>about</Link>
                 <Link href={"#projects"}>projects</Link>
@@ -49,14 +49,12 @@ export default function Home() {
                         zIndex: 1,
                         textAlign: "center",
                         translateY: -100,
-                    }}
-                >
+                    }}>
                     <div
                         className={styles.text_container}
                         style={{
-                            transform: `translateY(${scrollY * 0.025}vh)`,
-                        }}
-                    >
+                            transform: `translateY(${scrollY * 0.06}vh)`,
+                        }}>
                         <h1>Nadav Kirsh</h1>
                         <p>Frontend Developer</p>
                     </div>
@@ -70,8 +68,7 @@ export default function Home() {
                         height: "50px",
                         transform: `translateY(${scrollY * 0.05}vh)`,
                         translateY: -50,
-                    }}
-                >
+                    }}>
                     <motion.img
                         animate={{ y: 50 }}
                         transition={{ type: "spring", stiffness: 15 }}
@@ -82,8 +79,9 @@ export default function Home() {
             <section className={styles.section_2} id="about">
                 <p>
                     Hey there! I'm Nadav {"  "} ٩(◕‿◕｡)۶ <br />
-                    I'm a Berlin-based Frontend developer for Lou&You,
-                    interested in projects that could help people through code.
+                    I'm a Berlin-based Frontend developer, specializing in React
+                    and Typescript. I'm interested in projects that could help
+                    people through code.
                     <br />
                     Curious where my coding journey will take me next!
                 </p>
@@ -92,8 +90,7 @@ export default function Home() {
                         target="_blank"
                         download
                         className="button mt-5 mr-5 is-dark is-rounded"
-                        href="/Nadav-Kirsh-CV.pdf"
-                    >
+                        href="/Nadav-Kirsh-CV.pdf">
                         <FaDownload className="mr-2" />
                         Download CV
                     </a>
@@ -101,8 +98,7 @@ export default function Home() {
                         rel="noreferrer"
                         target={"_blank"}
                         className="button mt-5 mr-5 is-dark is-rounded"
-                        href="https://github.com/gene4"
-                    >
+                        href="https://github.com/gene4">
                         <FaGithub className="mr-2" />
                         Github
                     </a>
@@ -110,16 +106,14 @@ export default function Home() {
                         rel="noreferrer"
                         target={"_blank"}
                         className="button mt-5 mr-5 is-dark is-rounded"
-                        href="https://www.linkedin.com/in/nadavkirsh/"
-                    >
+                        href="https://www.linkedin.com/in/nadavkirsh/">
                         <FaLinkedin className="mr-2" />
                         Linkedin
                     </a>
 
                     <a
                         className="button mt-5 is-dark is-rounded"
-                        href="mailto:nadavkirsh.dev@gmail.com"
-                    >
+                        href="mailto:nadavkirsh.dev@gmail.com">
                         <FaEnvelope className="mr-2" />
                         Email
                     </a>
